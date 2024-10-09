@@ -1,5 +1,5 @@
 main {
-    max-width: 840px; 
+    max-width: 640px; /* Removed duplicate max-width property */
 }
 
 nav {
@@ -15,13 +15,13 @@ nav a {
 
 h1 {
     color: steelblue;
-    padding: .5rem 
+    padding: 0.5rem;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2); 
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -33,16 +33,12 @@ aside img {
     height: auto;
 }
 
-main {
-    max-width: 640px;
-}
-
-main img{
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow:0 0 30px grey;
+    box-shadow: 0 0 30px grey;
 }
 
 p {
