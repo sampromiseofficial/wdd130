@@ -1,6 +1,6 @@
 /* Reset default styling */
 * {
-    margin: 0;
+    margin: 0.1rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -105,7 +105,8 @@ nav {
 
 .image-container img {
     width: 100%;
-    height: auto;
+    height: 15rem;
+    width: 30rem;
 }
 
 .info-text {
