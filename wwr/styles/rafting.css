@@ -14,7 +14,7 @@ header {
     background: url('water_rafting_main_new_image_2.png') no-repeat center center/cover;
     height: 100vh;
     color: #ff6347; /* Correct color using a valid hex value */
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -101,16 +101,18 @@ nav {
     text-align: center;
 }
 
+.service-item p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .service-item img {
     width: 200px;
     height: 200px;
-    object-fit: cover;
     border-radius: 20px;
-}
-
-.service-item h3 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    object-fit:cover;
+    margin: 7px;
 }
 
 .aside2 h2 {
@@ -135,11 +137,6 @@ nav {
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
-}
-
-.service2-item h3 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
 }
 
 footer {
