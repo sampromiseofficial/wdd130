@@ -1,7 +1,3 @@
-body {
-    padding: 0.5em;
-}
-
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -13,8 +9,8 @@ nav a {
     padding: 10px;
 }
 
-main h1 {
-    color: aqua;
+h1 {
+    color: steelblue;
 }
 
 main img {
@@ -33,7 +29,7 @@ aside {
 
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(red, green, blue);
+    border: 1px solid rgb(0, 0, 0, 0.2); 
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -47,7 +43,7 @@ aside img {
 
 footer {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
 }
 
