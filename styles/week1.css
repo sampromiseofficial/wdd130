@@ -1,0 +1,54 @@
+body {
+    padding: 0.5em;
+}
+
+nav a {
+    display: block;
+    background-color: blue;
+    color: aliceblue;
+    padding:1em;
+}
+
+main h1 {
+    color: aqua;
+}
+
+main img {
+    border: 1px solid blue;
+    padding: 2px;
+    width: 150px;
+    height: auto;
+    box-shadow: 0 0 30px grey;
+}
+
+p {
+    padding: 0.2em;
+}
+
+aside {
+
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(red, green, blue);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+}
+
+
+
+
+
+
