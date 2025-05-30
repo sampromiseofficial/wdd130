@@ -28,20 +28,26 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr; /* logo then text */
+    align-items: center; /* vertically center */
+    text-align: right;
+    margin-top: 0.2rem;
+    border-radius: 0.5rem;
 }
 
 header img {
     height: 60px;
+    border-radius: 0.2rem;
 }
+
 
 nav a {
     margin: 0 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    
 }
 
 h1, h2 {
@@ -56,29 +62,15 @@ h3 {
     text-align: center;
 }
 
-h3, p {
+p {
     text-align: center;
+    color: #FF006E;
+    font-size: 1rem;
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-footer {
-    background-color: var(--accent1-color);
-    color: white;
-    padding: 16px;
-    text-align: center;
-}
-
-footer img {
-    height: 24px;
-    margin: 0 5px;
 }
 
 /* HERO SECTION */
@@ -90,12 +82,12 @@ footer img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 0.5rem;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -103,7 +95,7 @@ footer img {
     color: white;
     font-size: 2rem;
     font-family: var(--heading-font);
-    z-index: 2;
+    border-radius: 0.2rem;
 }
 
 .hero article {
@@ -134,10 +126,10 @@ footer img {
     text-align: left;
 }
 
+
 /* HISTORY SECTION */
-.aside1 h2 {
+section h2 {
     text-align: center;
-    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
@@ -148,6 +140,7 @@ footer img {
     gap: 1rem;
     background: #f8f8f8;
     padding: 2rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .service-item {
@@ -156,72 +149,70 @@ footer img {
 }
 
 .service-item img {
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+    max-width: 250px;
+    height: 245px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: 0 auto;
     display: block;
 }
 
 .service-item p {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     text-align: justify;
-    padding: 0 10px;
+    padding: 0 5px;
+    color:#FF006E
 }
 
-/* ADVENTURE SECTION */
-section:nth-of-type(2) {
-    padding: 32px 16px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-section:nth-of-type(2) h2 {
+/* Adventure Section */
+section, h2 {
     font-size: 1.8rem;
     color: var(--primary-color);
-    margin-bottom: 16px;
-    text-transform: uppercase;
+    margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
-section:nth-of-type(2) img {
-    width: 135px;
-    margin: 8px;
-    border-radius: 8px;
+.adventure-gallery {
+    display: flex;
+    padding: 32px 16px;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    height: 17rem;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    min-width: 120px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 3px;
+    height: 200px;
+    margin-top: 0.02rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* RESPONSIVE LAYOUT */
-@media (max-width: 900px) {
-    header, main, footer {
-        width: 95%;
-    }
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.2rem;
+}
 
-    .hero article {
-        flex-direction: column;
-        text-align: center;
-        top: auto;
-        position: relative;
-        transform: none;
-        margin-top: 16px;
-    }
+footer p {
+    color: #f9f9f9;
+}
 
-    .hero article img {
-        margin: 0 0 16px 0;
-    }
-
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        max-width: 90%;
-    }
-
-    section:nth-of-type(2) img {
-        width: 100px;
-    }
+footer img {
+    height: 24px;
+    margin: 0 5px;
 }
