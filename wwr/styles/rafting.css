@@ -164,14 +164,33 @@ section {
     margin-top: 15px;
 }
 
+/* Employee */
+.employees {
+    display: flex;
+    padding: 32px 16px;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    height: 17rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Employee figure */
+.employees figure {
+    flex: 1;
+    min-width: 120px;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
 /* Employee Image */
 .employees img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-    border: var(--accent2-color);
+    width: 100%;
+    border-radius: 3px;
+    height: 200px;
+    margin-top: 0.02rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Form Styling */
