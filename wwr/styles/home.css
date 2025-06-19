@@ -116,8 +116,9 @@ section, h2 {
 }
 
 .sports {
-    display: flex;
+    display: grid;
     padding: 15px;
+    background-color: #FB5607;
     border-radius: 0.5rem;
     margin-bottom: 0.4rem;
     height: 17rem;
@@ -128,6 +129,7 @@ section, h2 {
 
 .sports figure {
     flex: 1;
+    grid-row: 1;
     min-width: 120px;
     max-width: 150px;
     margin: 0 auto;
@@ -145,41 +147,41 @@ figcaption {
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
+    color: #8338EC;
 }
 
 .imagenewsletter {
     position: relative;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    
 }
 
 .bottom_image {
-    display: block;
+    display: grid;
     width: 70%;
-    height: auto;
 }
 
 .bottom_image img {
     width: 100%;
     height: auto;
     display: block;
-    border: 1px solid #ccc;
+    border: 2px solid #FB5607;
     border-radius: 0.5rem;
 }
-
 
 .newsletter {
     position: absolute;
     right: 2rem;
     background-color: #fff;
-    padding: 1.5rem;
-    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    padding: 0.9rem;
+    border: 2px solid #FF006E;
     border-radius: 1rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-    max-width: 300px;
+    max-width: 380px;
     font-family: Arial, sans-serif;
     
 }
@@ -201,11 +203,11 @@ figcaption {
 .newsletter form {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 12px;
 }
 
 .newsletter label {
-    display: block;
+    display: grid;
     margin: 8px 0 4px;
     font-size: 0.85rem;
     color: #444;
